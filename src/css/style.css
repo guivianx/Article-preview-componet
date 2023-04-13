@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+--Azul-acinzentado-muito-escuro: #48556a;
+--Azul-escuro-dessaturado: #6d7f97;
+--Azul-acinzentado: #9eafc2;
+--Azul-acinzentado-claro: #ecf2f8;
+
+/*Tipografia*/
+/*Fonte 13px*/
+
+--fonte: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--Azul-acinzentado-claro);
+    font-size: 13px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+
+main {
+    display: flex;
+    background-color: #ffffff;
+    margin: auto;
+    max-width: 1440px;
+    border-radius: 8px;
+    
+}
+
+.fd {
+    background-image: url(../img/drawers.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    width: 285px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+h1,h2 {
+    color: var(--Azul-acinzentado-muito-escuro);
+}
+
+p {
+    color: var(--Azul-acinzentado);
+}
+section {
+    padding: 30px 30px 30px 30px;
+    width: 415px;
+}
+section > p {
+    padding-top: 15px;
+    line-height: 20px;
+
+
+}
+
+aside {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.prfl {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+aside > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+article {
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: relative;
+}
+article > aside > div > h2 {
+    font-size: 13px;
+}
+article > aside > div > p {
+    font-size: 12px;
+}
+
+.ldshare {
+    justify-content: end;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 455px;
+}
+
+
+.balao {
+    position: absolute;
+    display: flex;
+    background-color: #48556a;
+    width: 230px;
+    height: 50px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: auto;
+    visibility: hidden;
+    margin-bottom: -5px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.241);
+}
+
+
+.balao:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #48556a;
+    bottom: -10px;
+    left: 45.7%;
+  }
+
+
+
+.redes {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.redes > a > img {
+    width: 18px;
+    cursor: pointer;
+}
+
+#btshare {
+    background-color: #ecf2f8;
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+
+svg {
+    width: 15px;
+    height: 15px;
+}
+
